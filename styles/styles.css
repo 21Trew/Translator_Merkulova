@@ -1,0 +1,208 @@
+@font-face {
+  font-family: "Annie Use Your Telescope";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/AnnieUseYourTelescope-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Abel";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Abel-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bad Script";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/BadScript-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Assistant.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Assistant.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+body {
+  background-color: #FDD7B3;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+/*Шапка сайта*/
+
+/*Контакты*/
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+/*Основная информация*/
+
+main {
+  width: 1024px;
+  margin: auto;
+}
+
+.page-main {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Шапка основного блока*/
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+}
+
+.english {
+  font-family: "Annie Use Your Telescope";
+  font-size: 156px;
+  color: rgba(0, 0, 0, 0.3);
+  margin: 0;
+  padding: 0;
+}
+
+.s-club {
+  font-family: "Abel";
+  font-size: 87px;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+  padding: 0;
+}
+
+.level {
+  font-size: 49px;
+  margin: 0;
+  padding: 0;
+}
+
+/*Таблица и фото*/
+
+.main-info {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/*Фото справа*/
+
+aside {
+  width: 350px;
+  margin-top: 135px;
+  margin-left: auto;
+}
+
+/*Даты Место Цена*/
+
+.page-info {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  color: rgba(0, 0, 0, 0.71);
+}
+
+table {
+  border-collapse: collapse;
+  width: 600px;
+  margin-top: 55px;
+}
+
+td {
+  vertical-align: bottom;
+}
+
+.main-info-title {
+  font-family: "Bad Script";
+  font-weight: 400;
+  font-size: 67px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  height: 100px;
+}
+
+.black-font {
+  color: black;
+}
+
+.main-price {
+  font-weight: 400;
+  font-size: 70px;
+  color: black;
+  vertical-align: bottom;
+}
+
+.title-up {
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+}
+
+.lessons {
+  margin-top: 200px;
+}
+
+/*Преимущества*/
+
+.advantages-lessons {
+  width: fit-content;
+}
+
+.lessons-title,
+.advantages-title,
+.abonement-title {
+  font-weight: 700;
+}
+
+.advantages-date {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 25px;
+  padding: 0;
+}
+
+.advantages-title {
+  align-self: center;
+  margin: 0;
+  margin-top: 100px;
+  padding: 0;
+}
+
+.advantages-item {
+  align-self: center;
+  margin: 0;
+  padding: 0;
+}
