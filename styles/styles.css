@@ -38,6 +38,15 @@
   font-display: swap;
 }
 
+@keyframes rotation {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 html {
   height: 100%;
   width: 100%;
@@ -45,6 +54,7 @@ html {
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
+
 }
 
 body {
@@ -52,9 +62,222 @@ body {
   display: flex;
   flex-direction: column;
   align-self: center;
+  zoom: 0.8;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 /*Шапка сайта*/
+
+/*Крутящаяся надпись*/
+
+.warp__placeholder{
+  position: absolute;
+  color: transparent;
+  font-size: .1px;
+}
+
+.warp {
+  display: flex;
+  align-self: flex-end;
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  font: normal 40px/1 Rosario;
+  animation: rotation 10s infinite normal linear;
+  transform-origin: 50% 50%;
+  margin-right: -200px;
+  margin-top: -200px;
+  color: black;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color:black;
+}
+
+[class*='warp__'] {
+  display: block;
+  position: absolute;
+}
+
+.warp__0 {
+  transform-origin: 50% 54px;
+  transform: translate(47.287400000000005px,117.7457px) rotate(-1.31631rad);
+}
+
+.warp__1 {
+  transform-origin: 50% 54px;
+  transform: translate(70.6575px,84.2459px) rotate(-1.086645rad);
+}
+
+.warp__2 {
+  transform-origin: 50% 54px;
+  transform: translate(85.8367px,64.9358px) rotate(-0.928587rad);
+}
+
+.warp__3 {
+  transform-origin: 50% 54px;
+  transform: translate(97.0828px,47.67100000000001px) rotate(-0.766236rad);
+}
+
+.warp__4 {
+  transform-origin: 50% 54px;
+  transform: translate(118.60669999999999px,31.254000000000005px) rotate(-0.584174rad);
+}
+
+.warp__5 {
+  transform-origin: 50% 54px;
+  transform: translate(140.4591px,18.8502px) rotate(-0.411848rad);
+}
+
+.warp__6 {
+  transform-origin: 50% 54px;
+  transform: translate(166.0927px,10.691699999999997px) rotate(-0.25414rad);
+}
+
+.warp__7 {
+  transform-origin: 50% 54px;
+  transform: translate(189.2049px,6.268099999999997px) rotate(-0.102253rad);
+}
+
+.warp__8 {
+  transform-origin: 50% 54px;
+  transform: translate(215.8599px,5.5035000000000025px) rotate(0.036125rad);
+}
+
+.warp__9 {
+  transform-origin: 50% 54px;
+  transform: translate(234.892px,7.943300000000001px) rotate(0.175351rad);
+}
+
+.warp__10 {
+  transform-origin: 50% 54px;
+  transform: translate(261.2173px,15.102699999999999px) rotate(0.347536rad);
+}
+
+.warp__11 {
+  transform-origin: 50% 54px;
+  transform: translate(287.2026px,27.3523px) rotate(0.535278rad);
+}
+
+.warp__12 {
+  transform-origin: 50% 54px;
+  transform: translate(307.7128px,50.4483px) rotate(0.79503rad);
+}
+
+.warp__13 {
+  transform-origin: 50% 54px;
+  transform: translate(339.96px,79.1293px) rotate(1.047876rad);
+}
+
+.warp__14 {
+  transform-origin: 50% 54px;
+  transform: translate(352.7285px,99.5181px) rotate(1.198469rad);
+}
+
+.warp__15 {
+  transform-origin: 50% 54px;
+  transform: translate(355.752px,122.39519999999999px) rotate(1.344807rad);
+}
+
+.warp__16 {
+  transform-origin: 50% 54px;
+  transform: translate(360.8177px,148.9736px) rotate(1.489608rad);
+}
+
+.warp__17 {
+  transform-origin: 50% 54px;
+  transform: translate(360.2288px,176.5827px) rotate(-4.655689rad);
+}
+
+.warp__18 {
+  transform-origin: 50% 54px;
+  transform: translate(358.7227px,201.9994px) rotate(-4.490742rad);
+}
+
+.warp__19 {
+  transform-origin: 50% 54px;
+  transform: translate(349.6391px,225.62310000000002px) rotate(-4.309873rad);
+}
+
+.warp__20 {
+  transform-origin: 50% 54px;
+  transform: translate(342.5061px,245.5677px) rotate(-4.134414rad);
+}
+
+.warp__21 {
+  transform-origin: 50% 54px;
+  transform: translate(323.7591px,264.1563px) rotate(-3.949861rad);
+}
+
+.warp__22 {
+  transform-origin: 50% 54px;
+  transform: translate(301.9914px,282.2238px) rotate(-3.744706rad);
+}
+
+.warp__23 {
+  transform-origin: 50% 54px;
+  transform: translate(277.546px,295.8438px) rotate(-3.558455rad);
+}
+
+.warp__24 {
+  transform-origin: 50% 54px;
+  transform: translate(232.8267px,307.0399px) rotate(-3.336613rad);
+}
+
+.warp__25 {
+  transform-origin: 50% 54px;
+  transform: translate(207.4686px,310.5px) rotate(-3.140501rad);
+}
+
+.warp__26 {
+  transform-origin: 50% 54px;
+  transform: translate(188.2623px,309.152px) rotate(-3.021214rad);
+}
+
+.warp__27 {
+  transform-origin: 50% 54px;
+  transform: translate(161.5467px,304.9354px) rotate(-2.894012rad);
+}
+
+.warp__28 {
+  transform-origin: 50% 54px;
+  transform: translate(137.3278px,296.4543px) rotate(-2.738269rad);
+}
+
+.warp__29 {
+  transform-origin: 50% 54px;
+  transform: translate(113.0092px,284.1236px) rotate(-2.569379rad);
+}
+
+.warp__30 {
+  transform-origin: 50% 54px;
+  transform: translate(94.9716px,268.5716px) rotate(-2.391244rad);
+}
+
+.warp__31 {
+  transform-origin: 50% 54px;
+  transform: translate(77.0665px,250.1877px) rotate(-2.206028rad);
+}
+
+.warp__32 {
+  transform-origin: 50% 54px;
+  transform: translate(68.4406px,230.20479999999998px) rotate(-2.026597rad);
+}
+
+.warp__33 {
+  transform-origin: 50% 54px;
+  transform: translate(56.010099999999994px,208.3469px) rotate(-1.853098rad);
+}
+
+.warp__34 {
+  transform-origin: 50% 54px;
+  transform: translate(50.2988px,180.63px) rotate(-1.664721rad);
+}
 
 /*Контакты*/
 
@@ -62,11 +285,68 @@ body {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+  background-image: url("../images/top\ right.png");
+  background-repeat: no-repeat;
+  background-position: 450px -140px;
+}
+
+.top-right {
+  padding-left: 45%;
+  margin-top: -40%;
+}
+
+.social-media {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  list-style-type: none;
+  z-index: 2;
+}
+
+.social-button {
+  display: block;
+  height: 40px;
+}
+
+.vk {
+  background-image: url(../images/vkontakte.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 62.75px;
+  height: 39.22px;
+  margin-left: 37px;
+  margin-top: 27px;
+}
+
+.tg {
+  background-image: url(../images/telegram.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 49.31px;
+  height: 41.72px;
+  align-self: flex-end;
+  margin-top: 63px;
+  margin-right: 8px;
+}
+
+.insta {
+  background-image: url(../images/insta.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 44.82px;
+  height: 44.82px;
+  align-self: flex-end;
+  margin-top: 5px;
 }
 
 /*Основная информация*/
 
 main {
+  position: relative;
   width: 1024px;
   margin: auto;
 }
@@ -74,6 +354,7 @@ main {
 .page-main {
   display: flex;
   flex-direction: column;
+  margin-top: 24px;
 }
 
 /*Шапка основного блока*/
@@ -107,20 +388,20 @@ main {
   padding: 0;
 }
 
-/*Таблица и фото*/
-
+/*Таблица и фото. Начало*/
 .main-info {
   display: flex;
   flex-direction: row-reverse;
 }
+/*Таблица и фото. Конец*/
 
-/*Фото справа*/
-
-aside {
+/*Фото справа. Начало*/
+.main-photo {
   width: 350px;
   margin-top: 135px;
   margin-left: auto;
 }
+/*Фото справа. Конец*/
 
 /*Даты Место Цена*/
 
@@ -172,15 +453,36 @@ td {
   margin-top: 200px;
 }
 
-/*Преимущества*/
+.ornament-lines {
+  position: absolute;
+  margin-left: -20%;
+  margin-top: -4%;
+}
 
+.blue-bubble {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -200px;
+}
+
+.ornament-lines-blue {
+  position: absolute;
+  z-index: -1;
+}
+
+.lessons-item {
+  list-style-type: none;
+}
+
+/*Преимущества. Начало*/
 .advantages-lessons {
   width: fit-content;
 }
 
 .lessons-title,
 .advantages-title,
-.abonement-title {
+.abonement-title,
+.abonement-description {
   font-weight: 700;
 }
 
@@ -205,4 +507,58 @@ td {
   align-self: center;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
+/*Преимущества. Конец*/
+
+/*Абонементы. Начало*/
+.abonement {
+  width: 758px;
+  margin-top: 124px;
+  align-self: center;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+ol li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.line-dotted {
+  flex: 1 0;
+  border-bottom: 5px dotted rgba(0, 0, 0, 0.3);
+  height: 1em;
+  margin: 0 .4em;
+}
+/*Абонементы. Конец*/
+
+/*Фото со Speaking Club. Начало*/
+.brown-bubble {
+  margin-left: -100px;
+}
+
+.ornament-lines-brown {
+  position: absolute;
+  z-index: -1;
+}
+
+.SC-photo {
+  align-self: center;
+  margin-top: 124px;
+}
+
+.SC-about {
+  align-self: center;
+  text-align: center;
+}
+/*Фото со Speaking Club. Конец*/
+
+/*call-to-action. Начало*/
+.call-to-action {
+  align-self: center;
+  text-align: center;
+  margin-top: 220px;
+}
+/*call-to-action. Конец*/
